@@ -1,0 +1,7 @@
+Setup VS Code
+
+1. Fixing Preferences
+2. Fix Beautify Shortcut to match VS
+
+
+
