@@ -1,3 +1,6 @@
+Download From GitHub
+https://github.com/turbo25mike/HSC-IntroToProgramming.git
+
 Setup VS Code
 
 1. Fixing Preferences
