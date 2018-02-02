@@ -4,6 +4,13 @@ ctrl + shift + p
 Git: Clone
 https://github.com/turbo25mike/HSC-IntroToProgramming.git
 
+Adding Extensions
+
+Click on the 5th icon on the far right toolbar.
+
+Click install on Debugger for Chrome.
+
+Close Down VS Code and restart it.
 
 Setup VS Code
 
@@ -20,18 +27,6 @@ Click the pencil icon to edit
 File -> Preferences -> Settings
 
 "html.format.extraLiners": "",
-
-
-Let's Begin
-
-What is HTML?
-
-Hyper Text Markup Language
-
-1. Add a header
-
-2. Add an image
-
 
 
 
