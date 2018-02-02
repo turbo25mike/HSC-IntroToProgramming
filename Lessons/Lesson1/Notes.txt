@@ -1,10 +1,33 @@
 Download From GitHub
+
+ctrl + shift + p
+Git: Clone
 https://github.com/turbo25mike/HSC-IntroToProgramming.git
+
+Adding Extensions
+
+Click on the 5th icon on the far right toolbar.
+
+Click install on Debugger for Chrome.
+
+Close Down VS Code and restart it.
 
 Setup VS Code
 
 1. Fixing Preferences
+
+File -> Preferences -> Keyboard ShortCuts
+
+Search for Format
+
+Click the pencil icon to edit
+
 2. Fix Beautify Shortcut to match VS
+
+File -> Preferences -> Settings
+
+"html.format.extraLiners": "",
+
 
 
 
