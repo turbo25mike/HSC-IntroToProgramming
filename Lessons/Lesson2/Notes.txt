@@ -44,8 +44,26 @@ Simple math
 
     titleObj.innerText = 1 + 1;
 
-Strings Concatenate
-    titleObj.innerText = "Sample" + 1;
+Draw a ball
+    <canvas id="myCanvas" width="480" height="320"></canvas>
 
-    var sampleMath = 2*8;
-    titleObj.innerText = "Sample" + sampleMath;
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    
+    ctx.beginPath();
+    ctx.arc(0, 0, 10, 0, Math.PI * 2);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+
+Turn it into a function
+
+    function drawBall(x, y, radius) {
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, Math.PI * 2);
+        ctx.fillStyle = "#0095DD";
+        ctx.fill();
+        ctx.closePath();
+    }
+
+    drawBall(50,50,10);
