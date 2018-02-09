@@ -1,0 +1,44 @@
+Commit changes
+
+Pull From GitHub
+
+Push Changes
+
+https://github.com/turbo25mike/HSC-IntroToProgramming.git
+
+Add Extension
+
+VSCode Browser Sync
+
+https://marketplace.visualstudio.com/items?itemName=jasonlhy.vscode-browser-sync#overview
+
+Close Down VS Code and restart it.
+
+ctrl + shift + p
+
+type "server mode"
+
+Select on of the two options (either side bar or browser)
+
+Setup VS Code
+
+1. Fixing Preferences
+
+File -> Preferences -> Keyboard ShortCuts
+
+Search for Format
+
+Click the pencil icon to edit
+
+2. Fix Beautify Shortcut to match VS
+
+File -> Preferences -> Settings
+
+"html.format.extraLiners": "",
+
+
+2.  Hello World
+
+    document.getElementByID
+
+
