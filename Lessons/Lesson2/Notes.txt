@@ -1,44 +1,51 @@
-Commit changes
+Github
+    Commit changes
 
-Pull From GitHub
+    Pull From GitHub
 
-Push Changes
+    Push Changes
 
-https://github.com/turbo25mike/HSC-IntroToProgramming.git
+    https://github.com/turbo25mike/HSC-IntroToProgramming.git
 
 Add Extension
 
-VSCode Browser Sync
+    VSCode Browser Sync
 
-https://marketplace.visualstudio.com/items?itemName=jasonlhy.vscode-browser-sync#overview
+    https://marketplace.visualstudio.com/items?itemName=jasonlhy.vscode-browser-sync#overview
 
-Close Down VS Code and restart it.
+    Close Down VS Code and restart it.
 
-ctrl + shift + p
+    ctrl + shift + p
 
-type "server mode"
+    type "server mode"
 
-Select on of the two options (either side bar or browser)
+    Select on of the two options (either side bar or browser)
 
-Setup VS Code
+Fixing Preferences
 
-1. Fixing Preferences
+    File -> Preferences -> Keyboard ShortCuts
 
-File -> Preferences -> Keyboard ShortCuts
+    Search for Format
 
-Search for Format
+    Click the pencil icon to edit
 
-Click the pencil icon to edit
+Fix Beautify Shortcut to match VS
 
-2. Fix Beautify Shortcut to match VS
+    File -> Preferences -> Settings
 
-File -> Preferences -> Settings
+    "html.format.extraLiners": "",
 
-"html.format.extraLiners": "",
+Objects and the DOM
 
+    var titleObj = document.getElementById("title");
+    titleObj.innerText = "Hello World";
 
-2.  Hello World
+Simple math
 
-    document.getElementByID
+    titleObj.innerText = 1 + 1;
 
+Strings Concatenate
+    titleObj.innerText = "Sample" + 1;
 
+    var sampleMath = 2*8;
+    titleObj.innerText = "Sample" + sampleMath;
