@@ -1,0 +1,96 @@
+Github
+    Commit changes
+
+    Pull From GitHub
+
+    Push Changes
+
+    https://github.com/turbo25mike/HSC-IntroToProgramming.git
+
+Add Extension
+
+    VSCode Browser Sync
+
+    https://marketplace.visualstudio.com/items?itemName=jasonlhy.vscode-browser-sync#overview
+
+    Close Down VS Code and restart it.
+
+    ctrl + shift + p
+
+    type "server mode"
+
+    Select on of the two options (either side bar or browser)
+
+Fixing Preferences
+
+    File -> Preferences -> Keyboard ShortCuts
+
+    Search for Format
+
+    Click the pencil icon to edit
+
+Fix Beautify Shortcut to match VS
+
+    File -> Preferences -> Settings
+
+    "html.format.extraLiners": "",
+
+Objects and the DOM
+
+    var titleObj = document.getElementById("title");
+    titleObj.innerText = "Hello World";
+
+Simple math
+
+    titleObj.innerText = 1 + 1;
+
+Draw a ball
+    <canvas id="myCanvas" width="480" height="320"></canvas>
+
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    
+    ctx.beginPath();
+    ctx.arc(0, 0, 10, 0, Math.PI * 2);
+    ctx.fillStyle = "#0095DD";
+    ctx.fill();
+    ctx.closePath();
+
+Turn it into a function
+
+    function drawBall(x, y, radius) {
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, Math.PI * 2);
+        ctx.fillStyle = "#0095DD";
+        ctx.fill();
+        ctx.closePath();
+    }
+
+    drawBall(50,50,10);
+
+Game Loop
+
+    var x = 0;
+    var dx = 2;
+
+    function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawBall(x, 50, 10);
+        x = x + dx;
+    }
+
+    setInterval(draw, 10);
+
+Wall checks
+
+    function draw() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        drawBall(x, 50, 10);
+        
+        if (x > canvas.width || x < 0) {
+            dx = -dx;
+        }
+
+        x = x + dx;
+    }
+
