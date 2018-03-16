@@ -1,7 +1,10 @@
 
 //create var for paddleWidth
-var paddleWidth = 0;
-var paddleHeight = 0;
+
+var paddleWidth = 200;
+var paddleHeight = 20;
+
+//move paddle to bottom of screen
 
 //paddle movement
 //in draw()

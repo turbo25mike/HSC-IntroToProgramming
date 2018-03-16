@@ -2,6 +2,7 @@ var titleObj = document.getElementById("title");
 var math = 2 + 2;
 titleObj.innerText = "Welcome to" + math;
 
+
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 var ballRadius = 10;
@@ -12,7 +13,9 @@ var dy = -2;
 var rightPressed = false;
 var leftPressed = false;
 var paddleXPos = 20;
-var paddleYPos = 20;
+var paddleYPos = 300;
+var paddleWidth = 200;
+var paddleHeight = 20;
 
 function drawBall() {
     ctx.beginPath();
@@ -33,7 +36,7 @@ function drawRect(width, height, xPos, yPos) {
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawBall();
-    drawRect(200, 20, paddleXPos, paddleYPos);
+    drawRect(paddleWidth, paddleHeight, paddleXPos, paddleYPos);
     x = x + dx;
     y = y + dy;
     if (x > canvas.width || x < 0) {
