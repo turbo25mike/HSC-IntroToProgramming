@@ -15,15 +15,28 @@ var paddleXPos = 20;
 var paddleYPos = 300;
 var paddleWidth = 200;
 var paddleHeight = 20;
-var block = {
+var blockConfig = {
     height: 20,
     width: 50,
-    cols: 5,
+    cols: 8,
     rows: 3,
     colPad: 10,
     rowPad: 10
 };
-var blockRange = [block.rows][block.cols];
+
+var blockRange = new Array(blockConfig.rows);
+for (row = 0; row < blockConfig.rows; row++) {
+    blockRange[row] = new Array(blockConfig.cols);
+    for (col = 0; col < blockConfig.cols; col++) {
+        blockRange[row][col] = {
+            xPos: (blockConfig.width + blockConfig.colPad) * col,
+            yPos: (blockConfig.height + blockConfig.rowPad) * row,
+            width: blockConfig.width,
+            heigth: blockConfig.height,
+            isHit: false
+        };
+    }
+}
 
 function drawBall() {
     ctx.beginPath();
@@ -42,9 +55,9 @@ function drawRect(width, height, xPos, yPos) {
 }
 
 function drawBlocks() {
-    for (row = 0; row < block.rows; row++) {
-        for (col = 0; col < block.cols; col++) {
-            drawRect(block.width, block.height, (block.width + block.colPad) * col, (block.height + block.rowPad) * row);
+    for (row = 0; row < blockConfig.rows; row++) {
+        for (col = 0; col < blockConfig.cols; col++) {
+            drawRect(blockConfig.width, blockConfig.height, (blockConfig.width + blockConfig.colPad) * col, (blockConfig.height + blockConfig.rowPad) * row);
         }
     }
 }
