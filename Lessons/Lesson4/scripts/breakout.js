@@ -1,4 +1,3 @@
-//TODO Clean up header remove titleObj
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 var ballRadius = 10;
@@ -20,7 +19,6 @@ var blockConfig = {
     colPad: 10,
     rowPad: 10
 };
-//TODO ADD score, function update score and in draw add score
 var score = 0;
 
 var blockRange = new Array(blockConfig.rows);
@@ -56,7 +54,6 @@ function drawRect(width, height, xPos, yPos) {
 function drawBlocks() {
     for (row = 0; row < blockConfig.rows; row++) {
         for (col = 0; col < blockConfig.cols; col++) {
-            //TODO switch to var of block for current item
             var block = blockRange[row][col];
             if(block.isHit == false) {
                 drawRect(block.width, block.height, block.xPos, block.yPos);
@@ -65,7 +62,6 @@ function drawBlocks() {
     }
 }
 
-//TODO 
 function collisionDetection() {
     for (row = 0; row < blockConfig.rows; row++) {
         for (col = 0; col < blockConfig.cols; col++) {
@@ -80,7 +76,7 @@ function collisionDetection() {
         }
     }
 }
-//TODO
+
 function updateScore(){
     document.getElementById("score").innerText = score;
 }
@@ -90,7 +86,6 @@ function draw() {
     drawBlocks();
     drawBall();
     drawRect(paddleWidth, paddleHeight, paddleXPos, paddleYPos);
-    //TODO
     collisionDetection();
     updateScore();
     x = x + dx;
